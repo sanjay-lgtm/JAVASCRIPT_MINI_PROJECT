@@ -37,7 +37,7 @@ main {
 }
 ::placeholder {
   color: aliceblue;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 .main_form {
   display: grid;
@@ -47,6 +47,7 @@ main {
 .main_form-submit-btn {
   all: unset;
   width: 10em;
+  font-weight: 600;
   background: pink;
   padding: 0.7em 0;
   transition: all 0.5s ease;
@@ -102,11 +103,12 @@ button:active {
   padding: 1em 0;
 }
 .main_player-name {
-  font-weight: 400;
+  font-weight: 600;
 }
 .main_time-stamp {
   color: #686868;
   font-size: 0.8em;
+  font-weight: 600;
 }
 .main_scoreboard-btn-container {
   margin: 1em;
