@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  color: #252525;
+  background-image: url(https://images.unsplash.com/photo-1709625862284-b8a82d339b99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  /* background: #535050; */
+  font-weight: 300;
+  display: grid;
+  justify-content: center;
+  padding: 3em 0;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: inset 0;
+  padding: 20px 20px 20px 20px;
+  background-color:#535050;
+}
+.main_title {
+  font-size: 1.5em;
+  width: 80%;
+  color: black;
+  background-color: #e0bbd2;
+  border-radius: 10px;
+}
+::placeholder {
+  color: aliceblue;
+  opacity: 1; /* Firefox */
+}
+.main_form {
+  display: grid;
+  gap: 0.6em;
+  justify-content: center;
+}
+.main_form-submit-btn {
+  all: unset;
+  width: 10em;
+  background: pink;
+  padding: 0.7em 0;
+  transition: all 0.5s ease;
+}
+input {
+  all: unset;
+  padding: 0.5em 0.8em;
+  width: 80%;
+  border: 2px solid white;
+  text-align: start;
+  color: #ffffff;
+  text-decoration: 1px;
+}
+input:focus {
+  border: 3px solid white;
+}
+.main_error-prompter {
+  color: #ff7864;
+  font-weight: 700;
+  font-size: 1em;
+  display: none;
+}
+button:not(.main_form-submit-btn) {
+  all: unset;
+  border-radius: 50%;
+  background: #e0bbd2;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s ease;
+}
+button:active {
+  transform: scale(0.95) translateY(5px);
+  filter: brightness(0.9);
+}
+.main_scoreboard-wrapper {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.main_scoreboard {
+  display: grid;
+  justify-items: center;
+  gap: 0.3em;
+  width: 90%;
+  background: pink;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+.main_player-name {
+  font-weight: 400;
+}
+.main_time-stamp {
+  color: #686868;
+  font-size: 0.8em;
+}
+.main_scoreboard-btn-container {
+  margin: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+@media (min-width: 35.25em) {
+  .main_title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-variant: small-caps;
+  }
+  .main_form {
+    display: flex;
+  }
+  .main_scoreboard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  input {
+    width: 10em;
+  }
+}
