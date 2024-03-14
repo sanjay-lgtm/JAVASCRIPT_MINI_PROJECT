@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO-LIST</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconstout.com/release/v4.0.0/css/line.css"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <li class="add-box">
-        <div class="icon"><i class="uil uil-plus"></i></div>
-        <p>Add New Note</p>
-      </li>
-      <li class="note">
-        <div class="details">
-          <p>This is Title</p>
-          <span
-            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-            quod eveniet? Harum alias hic cumque? Quibusdam possimus iste ex aut
-            saepe in unde. Quo temporibus blanditiis eligendi voluptatibus. Ea,
-            iste.</span
-          >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List - JavaScript Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h1>My To Do List</h1>
+            <input type="text" placeholder="Add a new to do..." id="inputBox">
+            <input type="button" value="Add" id="addBtn">
         </div>
-      </li>
+
+        <ul class="todoList" id="todoList">
+            <!-- <li><p>Task1</p></li>
+            <li>Task2</li>
+            <li>Task3</li> -->
+        </ul>
     </div>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
