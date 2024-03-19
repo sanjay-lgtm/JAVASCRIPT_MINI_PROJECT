@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+body {
+  background-color: lightseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+i{
+    color: gray;
+    font-size: 75px;
+}
+.active{
+    color: #b91818;
+}
