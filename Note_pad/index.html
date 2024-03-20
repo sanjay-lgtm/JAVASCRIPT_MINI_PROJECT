@@ -11,19 +11,19 @@
     ></script>
   </head>
   <body>
+    <video
+      src="media/pexels_videos_2759484 (2160p).mp4"
+      type="video/mp4"
+      class="backgroundVedio"
+      loop
+      autoplay
+    ></video>
     <div class="container">
-      <vedio src="media/particles.mp4" muted="" autoplay=""></vedio>
+      <video src="media/particles.mp4" muted="" loop autoplay></video>
       <h2><span>🖊️A</span>uto<span> S</span>ave Te<span>xtA</span>rea 🖊️</h2>
+
       <div class="music">
         <div class="music-player">
-          <!-- <nav>
-            <div class="circle">
-              <i class="fa-solid fa-angle-left"></i>
-            </div>
-            <div class="circle">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </nav> -->
           <audio id="song">
             <source src="media/alan.mp3" type="audio/mpeg" />
           </audio>
@@ -41,9 +41,14 @@
           </div>
         </div>
       </div>
+      <h4>For Drow Click this </h4>
+      <span class="gun">▄︻デ══━一💨</span>
+      <label class="switch">
+        <input type="checkbox" id="sliderBtn" />
+        <span class="slider round"></span>
+      </label>
 
       <div class="input-group">
-        <!-- <div class="bg-text">color</div> -->
         <input
           type="text"
           autocomplete="off"
@@ -56,13 +61,41 @@
 
       <br />
 
-      <textarea
-        name=""
-        id="myTextarea"
-        cols="50"
-        rows="20"
-        placeholder="Start typing here ..."
-      ></textarea>
+      <div class="textContainer">
+        <textarea
+          name=""
+          id="myTextarea"
+          cols="50"
+          rows="20"
+          placeholder="Start typing here ..."
+        ></textarea>
+      </div>
+      <div class="nav hidden">
+        <div class="clr" data-clr="#000"></div>
+        <div class="clr" data-clr="red"></div>
+        <div class="clr" data-clr="orange"></div>
+        <div class="clr" data-clr="blue"></div>
+        <div class="clr" data-clr="purple"></div>
+        <div class="clr" data-clr="yellowgreen"></div>
+        <div class="clr" data-clr="yellow"></div>
+        <div class="clr" data-clr="#fff"></div>
+        <button class="clear">Clear</button>
+        <button class="save">Save</button>
+        <input type="color" id="favcolor" value="#FFFFFF" />
+        <input
+          type="range"
+          name="ageInputName"
+          id="ageInputId"
+          value="5"
+          min="1"
+          max="10"
+          oninput="ageOutputId.value = ageInputId.value"
+        />
+        <output id="ageOutputId">5</output>
+        <div class="emoji">🎨</div>
+      </div>
+
+      <canvas id="canvas" class="hidden"></canvas>
     </div>
 
     <script src="script.js"></script>
