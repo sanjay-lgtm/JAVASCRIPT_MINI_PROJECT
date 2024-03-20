@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+   
     <div class="content-wrapper">
       <header>
-        <h1>Pikachuu!</h1>
+        <section>
+          <h2>
+              <span>P</span>
+              <span>i</span>
+              <span>k</span>
+              <span>a</span>
+              <span>C</span>
+              <span>h</span>
+              <span>u</span>
+              <span>!</span>
+              <span>!</span>
+              <span>!</span>
+          </h2>
+      </section>
       </header>
       <main>
         <form action="" id="pokemon-type-filter">
@@ -31,8 +45,8 @@
             <option value="ice">Ice</option>
             <option value="dragon">Dragon</option>
           </select>
-          <input type="submit" value="Filter by  Type" />
-          <button onclick="window.location.reload();">Reset</button>
+          <input type="submit" value="Filter by Type..." id="filter" />
+          <button onclick="window.location.reload();" id="reset">Reset</button>
         </form>
         <form id="pokemon-search-form" class="" action="" method="GET">
           <input

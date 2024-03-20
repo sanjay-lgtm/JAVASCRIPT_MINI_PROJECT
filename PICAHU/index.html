@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div class="content-wrapper">
+        <section>
+            <h2>
+                <span>P</span>
+                <span>i</span>
+                <span>k</span>
+                <span>a</span>
+                <span>C</span>
+                <span>h</span>
+                <span>u</span>
+                <span>!</span>
+                <span>!</span>
+                <span>!</span>
+            </h2>
+        </section>
+      <main>
+        <form action="" id="pokemon-type-filter">
+          <select name="type" id="" class="type-filter">
+            <option value="">Types</option>
+            <option value="grass">Grass</option>
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="bug">Bug</option>
+            <option value="normal">Normal</option>
+            <option value="poison">Poison</option>
+            <option value="electric">Electric</option>
+            <option value="ground">Ground</option>
+            <option value="fairy">Fairy</option>
+            <option value="fighting">Fighting</option>
+            <option value="psychic">Psychic</option>
+            <option value="rock">Rock</option>
+            <option value="ghost">Ghost</option>
+            <option value="ice">Ice</option>
+            <option value="dragon">Dragon</option>
+          </select>
+          <input type="submit" value="Filter by Type..." id="filter" />
+          <button id="reset">Reset</button>
+        </form>
+        <form action="" id="pokemon-search-form" method="GET">
+          <input
+            type="text"
+            id="pokemon-search-input"
+            name=""
+            placeholder="Enter Pokemon Name"
+          />
+        </form>
+        <section class="form-spacers"></section>
+        <section id="pokedex"></section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

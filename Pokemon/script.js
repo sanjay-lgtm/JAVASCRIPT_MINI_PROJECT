@@ -82,7 +82,7 @@ function createPokemonCard(pokemon) {
     frontImage.src = `${pokemon.frontImage}`
     frontImage.classList.add("front-pokemon-image")
 
-    const frontPokeName = document.createElement('h2')
+    const frontPokeName = document.createElement('h3')
     frontPokeName.innerHTML = `<a href="/pokemon.html?pokemon_id=${pokemon.pokemon_id}">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</a>`
 
     const frontPokeID = document.createElement('p')
@@ -110,7 +110,7 @@ function createPokemonCard(pokemon) {
     backPokeID.textContent = `#${pokemon.pokemon_id}`
     backPokeID.classList.add("back-poke-id")
 
-    const backPokeName = document.createElement('h2')
+    const backPokeName = document.createElement('h3')
     backPokeName.innerHTML = `<a href="/pokemon.html?pokemon_id=${pokemon.pokemon_id}">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</a>`
     backPokeName.classList.add("back-pokemon-name")
 
