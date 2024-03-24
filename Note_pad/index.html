@@ -32,16 +32,19 @@
           <span>r</span>
           <span>o</span>
           <span>w</span>
-          <span>!</span>
-          <span>!</span>
-          <span>🖊️</span>
+          <span>🎮</span>
+          <span>G</span>
+          <span>a</span>
+          <span>m</span>
+          <span>e</span>
+          <span>🎧</span>
         </h2>
       </section>
 
       <div class="music">
         <div class="music-player">
           <audio id="song">
-            <source src="media/alan.mp3" type="audio/mpeg" />
+            <source src="media" type="audio/mpeg" />
           </audio>
           <input type="range" value="0" id="progress" />
           <div class="controls">
@@ -57,12 +60,26 @@
           </div>
         </div>
       </div>
-      <h4>For Drow Click this</h4>
-      <span class="gun">▄︻デ══━一💨</span>
-      <label class="switch">
-        <input type="checkbox" id="sliderBtn" />
-        <span class="slider round"></span>
-      </label>
+      <div class="content">
+        <div>
+          <h3>Drowing</h3>
+          <label class="switch">
+            <input type="checkbox" id="sliderBtn" />
+            <span class="slider round"></span>
+          </label>
+          <!-- <span class="gun">ﮩ٨ـﮩﮩ٨ـ🖤ﮩ٨ـﮩﮩ٨ـ</span> -->
+        </div>
+
+        <div>
+          <h3>Gaming</h3>
+          <!-- <span class="gun">▄︻デ══━一💨</span> -->
+          <!-- <label class="switch">
+            <input type="checkbox" id="sliderBtntwo" />
+            <span class="slider round"></span>
+          </label> -->
+          <button><a href="../game/index.html"></a>🎮Start Gaming!</button>
+        </div>
+      </div>
 
       <div class="input-group">
         <input
@@ -112,6 +129,21 @@
       </div>
 
       <canvas id="canvas" class="hidden"></canvas>
+
+      <!-- for game -->
+
+      <!-- <div id="game">
+        <div class="background"></div>
+        <img src="images/Bird.png" alt="bird-img" class="bird" id="bird-1" />
+        <div class="message">
+          Enter To Start Game
+          <p><span style="color: red">&uarr;</span> ArrowUp to Control</p>
+        </div>
+        <div class="score">
+          <span class="score_title"></span>
+          <span class="score_val"></span>
+        </div>
+      </div> -->
     </div>
 
     <script src="script.js"></script>
